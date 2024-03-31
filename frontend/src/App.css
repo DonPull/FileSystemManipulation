@@ -1,0 +1,102 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 2rem;
+  padding-top: 200px;
+  width: 100%;
+  height: 100%;
+}
+
+#file-manager{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(139, 139, 139);
+  border-radius: 20px;
+  border-bottom-right-radius: 3px;
+
+  width: 800px;
+  height: 500px;
+}
+
+#header{
+  display: flex;
+  gap: 50px;
+  border-bottom: 2px solid rgb(139, 139, 139);
+  padding: 10px 20px;
+}
+
+#controls-container{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#controls-container img{
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  filter: invert(99%) sepia(3%) saturate(469%) hue-rotate(226deg) brightness(113%) contrast(86%);
+}
+#controls-container :nth-child(1){
+  rotate: 90deg;
+}
+#controls-container :nth-child(2){
+  rotate: -90deg;
+}
+
+#current-path-container{
+  width: -webkit-fill-available;
+  border-radius: 10px;
+  border: 1px solid rgb(139, 139, 139);
+  padding: 3px 10px;
+
+  /* warp the current path we are in if the path gets too long. display 3 dots to indicate that it's too long*/
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#current-path-container label{
+  width: 100%;
+}
+
+#file-list{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+#upload-file-container{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #e9e9e9;
+  border-radius: 10px;
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 6px 11px;
+  cursor: pointer;
+  transition: 100ms;
+
+  outline: 2px solid #000;
+  outline-offset: -2px;
+}
+#upload-file-container *{
+  cursor: pointer;
+}
+#upload-file-container:hover{
+  /* outline: 2px solid #000;
+  outline-offset: -2px; */
+  
+  outline: 2px dashed #000;
+  outline-offset: -4px;
+}
+#upload-file-container img{
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+}
