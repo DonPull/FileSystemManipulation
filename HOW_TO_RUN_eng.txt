@@ -4,6 +4,7 @@
 4. Next in the command prompt opened in the "backend" directory run "nodemon index.js" (or if that does not work, run "node index.js").
 5. Next in the command prompt opened in the "frontend" directory run "npm run dev".
 6. If there is an error it's possible that you will need to change the localhost string value in the backend. Go to directory "backend", file: "index.js". On line 14 change this: 'origin: "http://localhost:5173"' so that it matches the port the frontend is running on. Example: 'origin: "http://localhost:8080"'
+7. If there wasn't an error you should get a message similar to: "VITE v5.2.7  ready in 1007 ms". And on the next line: "Local:   http://localhost:5173/". Now go to your browser and in the URL address bar paste: "http://localhost:5173/"
 
 Additional notes:
 Sadly I did not have the time to document the API and the upload functionality can only upload files to the base directory of the server.
