@@ -1,8 +1,9 @@
-1. First we go in the "frontend" directory, open up a command prompt and run "npm i".
-2. Then we go in the "backend" directory, open up a command prompt and run "npm i".
-3. Next in the command prompt opened in the "backend" directory run "nodemon index.js" (or if that does not work, run "node index.js").
-4. Next in the command prompt opened in the "frontend" directory run "npm run dev".
-5. If there is an error it's possible that you will need to change the localhost string value in the backend. Go to directory "backend", file: "index.js". On line 14 change this: 'origin: "http://localhost:5173"' so that it matches the port the frontend is running on. Example: 'origin: "http://localhost:8080"'
+1. First make you have node.js installed on your computer (the node version for this project is v18). If you don't have node.js installed you may get the error: "'npm' is not recognized as an internal or external command, operable program or batch file."
+2. Then we go in the "frontend" directory, open up a command prompt and run "npm i".
+3. Then we go in the "backend" directory, open up a command prompt and run "npm i".
+4. Next in the command prompt opened in the "backend" directory run "nodemon index.js" (or if that does not work, run "node index.js").
+5. Next in the command prompt opened in the "frontend" directory run "npm run dev".
+6. If there is an error it's possible that you will need to change the localhost string value in the backend. Go to directory "backend", file: "index.js". On line 14 change this: 'origin: "http://localhost:5173"' so that it matches the port the frontend is running on. Example: 'origin: "http://localhost:8080"'
 
 Additional notes:
 Sadly I did not have the time to document the API and the upload functionality can only upload files to the base directory of the server.
